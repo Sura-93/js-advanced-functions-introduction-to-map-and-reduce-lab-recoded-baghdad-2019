@@ -14,6 +14,20 @@ function mapToNoChange (sourceArray) {
 return NewArr;
 }
 
+function mapToDouble(sourceArray){
+    let newArr= [];
+  for(let i = 0;i < sourceArray.length; i++){
+    newArr.push(sourceArray[i] * 2);
+  }
+  return newArr;
+}
+function mapToSquare(sourceArray) {
+      let newArr= [];
+  for(let i = 0;i < sourceArray.length; i++){
+    newArr.push(sourceArray[i] ** 2);
+  }
+  return newArr;
+}
 function reduceToTotal(sourceArray, startingPoint = 0){
   let total= startingPoint;
   for(let i = 0;i < sourceArray.length; i++){
